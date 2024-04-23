@@ -1,7 +1,9 @@
 # collabtogdrive
 # Meta-Llama-3-8B Model
 
-This repository contains the Meta-Llama-3-8B language model for text generation.
+This repository provides instructions for directly downloading the Meta-Llama-3-8B language model for text generation to your Google Drive.
+To directly download the Meta-Llama-3-8B language model to your Google Drive, follow the steps in the code snippet provided in the 'Downloading and Saving the Model' section of this README.
+
 
 ## Initial Setup
 
@@ -20,7 +22,7 @@ To get started, you will need an API token from Hugging Face, which will allow y
 
 To add your secret key (which contains the Hugging Face token) in Google Collab, follow these steps:
 
-- Open your notebook in Google Colab.
+- Open your notebook in Google Collab.
 - On the left side, there is an icon that looks like a lock. Click on it to open the 'Secrets' section.
 - Click on “Add new secret”.
 - In the name field, type `HF_TOKEN` without spaces.
@@ -31,7 +33,8 @@ To add your secret key (which contains the Hugging Face token) in Google Collab,
 
 To download and save the model to your Google Drive, execute the following code in Google Collab:
 
-```import torch
+```python
+import torch
 from transformers import AutoModelForCausalLM
 from google.colab import drive, userdata
 import os
