@@ -20,11 +20,12 @@ To get started, you will need an API token from Hugging Face, which will allow y
 
 To add your secret key (which contains the Hugging Face token) in Google Collab, follow these steps:
 
-- Open your notebook in Google Collab.
-- Go to the `Runtime` > `Change runtime type` menu and ensure you are using a GPU-enabled runtime environment if necessary.
-- In the notebook, access the `Runtime` > `Add secret` menu.
-- In the window that appears, enter the key `HF_TOKEN` and paste the value of your Hugging Face token.
-- Click "Add" to save the secret key.
+- Open your notebook in Google Colab.
+- On the left side, there is an icon that looks like a lock. Click on it to open the 'Secrets' section.
+- Click on “Add new secret”.
+- In the name field, type `HF_TOKEN` without spaces.
+- Paste the value of your Hugging Face token into the value field.
+- Click "Add" to save the secret.
 
 ## Downloading and Saving the Model
 
